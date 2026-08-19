@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Puzzle For You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true">
+    <span>♥</span><span>♡</span><span>♥</span><span>♡</span><span>♥</span>
+    <span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span>
+  </div>
+
+  <main class="page">
+    <section class="intro" id="intro">
+      <div class="mini-heart">♥</div>
+      <p class="eyebrow">A little surprise for you</p>
+      <h1>Put the pieces<br>together, love. 🧩</h1>
+      <p class="subtext">Some of my favourite moments with you are worth putting together.</p>
+      <button id="startBtn" class="primary-btn">Start the puzzle ❤️</button>
+    </section>
+
+    <section class="game hidden" id="game">
+      <header class="game-header">
+        <div>
+          <p class="eyebrow">OUR LITTLE PUZZLE</p>
+          <h2>Can you put us back together?</h2>
+        </div>
+        <div class="game-controls">
+        <div class="timer" id="timer">00:00</div>
+        <div class="progress" id="progress">0 / 30</div>
+          <button class="tool-btn" id="hintBtn" type="button">💡 Hint</button>
+          <button class="tool-btn" id="shuffleBtn" type="button">🔀 Shuffle</button>
+        </div>
+      </header>
+
+      <div class="canvas-wrap">
+        <canvas id="puzzleCanvas" width="1200" height="800"></canvas>
+        <div class="loading" id="loading">Making your puzzle… ❤️</div>
+      </div>
+
+      <p class="hint">Drag a piece close to its place — it will snap in. 🧩</p>
+    </section>
+
+    <section class="complete hidden" id="complete">
+      <div class="complete-photo">
+        <img src="assets/puzzle-photo.jpeg" alt="Our photo">
+      </div>
+      <div class="mini-heart">♥</div>
+      <p class="eyebrow">YOU DID IT</p>
+      <h2>And somehow,<br>all the pieces fit. ❤️</h2>
+      <p class="subtext">Just like us.</p>
+      <button class="primary-btn" id="againBtn">Put it together again</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
